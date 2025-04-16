@@ -61,6 +61,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// SizerAI custom colors
+				sizer: {
+					background: '#0B0F1C',
+					surface: '#151A2E',
+					primary: '#845CFF',
+					secondary: '#39D0FF',
+					error: '#FF5C93',
+					'text-primary': '#F5F6FA',
+					'text-secondary': '#A2A9C1',
+					divider: '#272B45',
 				}
 			},
 			borderRadius: {
