@@ -1,5 +1,7 @@
 
 import { Github, Linkedin, Twitter } from 'lucide-react';
+import logo from "./assets/logo.png";
+
 
 const Footer = () => {
   return (
@@ -8,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-1 md:col-span-1">
             <a href="/" className="flex items-center mb-6">
-          <img className="invert" src='../public/Sizer-logo.png.png'></img>
+          <img className="invert" src={logo}></img>
               
             </a>
             <p className="text-sizer-text-secondary mb-6 max-w-xs">

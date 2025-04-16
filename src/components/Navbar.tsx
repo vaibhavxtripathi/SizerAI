@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from "./assets/logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <a href="/" className="flex items-center">
           {/* <span className="text-2xl font-bold gradient-text">SizerAI</span> */}
-          <img className="invert" src='../public/Sizer-logo.png.png'></img>
+          <img className="invert" src={logo}></img>
         </a>
 
         {/* Desktop Navigation */}
