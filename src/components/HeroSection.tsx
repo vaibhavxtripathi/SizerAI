@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="absolute top-1/3 right-1/3 w-64 h-64 bg-purple-500/10 rounded-full filter blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 z-10 py-12 md:py-24">
+      <div className="container mx-10 px-4 md:px-6 z-10 py-12 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">

@@ -1,24 +1,29 @@
-
 import { Camera, BarChart2, Shirt } from 'lucide-react';
+import image1 from './assets/img1.jpg';
+import image2 from './assets/img2.webp';
+import image3 from './assets/img3.jpg';
 
 const steps = [
   {
     icon: Camera,
     title: "Scan",
     description: "Users take a quick body scan with any smartphone camera through your app or website.",
-    color: "from-sizer-primary to-purple-600"
+    color: "from-sizer-primary to-purple-600",
+    image: image1
   },
   {
     icon: BarChart2,
     title: "Analyze",
     description: "Our AI engine precisely analyzes body measurements and dimensions in real-time.",
-    color: "from-violet-500 to-sizer-primary"
+    color: "from-violet-500 to-sizer-primary",
+    image: image2
   },
   {
     icon: Shirt,
     title: "Recommend",
     description: "Users receive personalized size recommendations for perfect fit, every time.",
-    color: "from-blue-500 to-sizer-secondary"
+    color: "from-blue-500 to-sizer-secondary",
+    image: image3
   }
 ];
 
@@ -50,6 +55,15 @@ const HowItWorks = () => {
                 
                 <h3 className="text-2xl font-semibold mb-3">{step.title}</h3>
                 <p className="text-sizer-text-secondary max-w-xs">{step.description}</p>
+                
+                {/* Step visual */}
+                <div className="mt-6 w-full max-w-xs h-48 rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src={step.image} 
+                    alt={`${step.title} step illustration`} 
+                    className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
                 
                 {/* Step number */}
                 <div className="w-10 h-10 rounded-full border-2 border-sizer-primary flex items-center justify-center mt-6 text-sizer-primary font-bold">

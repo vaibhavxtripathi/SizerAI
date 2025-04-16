@@ -8,7 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-1 md:col-span-1">
             <a href="/" className="flex items-center mb-6">
-              <span className="text-2xl font-bold gradient-text">SizerAI</span>
+          <img className="invert" src='../public/Sizer-logo.png.png'></img>
+              
             </a>
             <p className="text-sizer-text-secondary mb-6 max-w-xs">
               Revolutionizing body measurement and fit prediction through AI technology for the fashion, retail, and uniform industries.
